@@ -166,7 +166,17 @@ Visit [animus.uno](https://animus.uno) to:
 
 ## 📄 License
 
-This project is open-source. Please refer to the repository for specific licensing information.
+Animus is dual-licensed under:
+
+- **GNU Affero General Public License v3.0 (AGPLv3)** - For software and code
+- **Creative Commons Attribution-ShareAlike 4.0 International (CC-BY-SA)** - For documentation and creative works (where applicable)
+
+This dual licensing approach ensures:
+- **Open Source Compliance**: AGPLv3 ensures that any derivative works remain open source
+- **Creative Freedom**: CC-BY-SA allows for flexible use of documentation and creative content
+- **Community Access**: Both licenses promote sharing and collaboration while protecting the project's open nature
+
+For specific licensing terms and conditions, please refer to the individual license files in the repository.
 
 ---
 
