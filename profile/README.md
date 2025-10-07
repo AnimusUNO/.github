@@ -3,7 +3,7 @@
 > **An open-source framework at the intersection of robotics and generative AI, designed to imbue autonomous systems with simulated mechanical consciousness.**
 
 [![Website](https://img.shields.io/badge/Website-animus.uno-blue)](https://animus.uno)
-[![Telegram](https://img.shields.io/badge/Telegram-Community-blue)](https://t.me)
+[![Discord](https://img.shields.io/badge/Discord-Community-blue)](https://discord.gg/animusuno)
 [![Email](https://img.shields.io/badge/Email-team@animus.uno-green)](mailto:team@animus.uno)
 
 ## 🌟 Overview
@@ -139,14 +139,14 @@ Animus focuses on cutting-edge research in artificial consciousness and brain-in
 
 - **Documentation**: [animus.uno](https://animus.uno)
 - **GitHub Repository**: [animus.uno](https://animus.uno)
-- **Community Support**: [Telegram](https://t.me)
+- **Community Support**: [Discord](https://discord.gg/animusuno)
 - **Examples & Tutorials**: [animus.uno](https://animus.uno)
 - **Research Papers**: [animus.uno](https://animus.uno)
 
 ## 📞 Contact
 
 ### Community Support
-Join our [Telegram community](https://t.me) for support, discussions, and collaboration.
+Join our [Discord community](https://discord.gg/animusuno) for support, discussions, and collaboration.
 
 ### Business Inquiries
 - **Collaboration**: [team@animus.uno](mailto:team@animus.uno)
@@ -180,4 +180,4 @@ For specific licensing terms and conditions, please refer to the individual lice
 
 ---
 
-**Website**: [animus.uno](https://animus.uno) | **Community**: [Telegram](https://t.me) | **Email**: [team@animus.uno](mailto:team@animus.uno)
+**Website**: [animus.uno](https://animus.uno) | **Community**: [Discord](https://discord.gg/animusuno) | **Email**: [team@animus.uno](mailto:team@animus.uno)
