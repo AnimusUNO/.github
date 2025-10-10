@@ -28,6 +28,26 @@ Animus adopts a **brain-inspired design methodology** that mirrors human cogniti
 
 This disciplined naming approach ensures that the architecture remains legible and extensible while maintaining a strong connection to the cognitive processes it seeks to model.
 
+## 🚀 Start Here
+
+Ready to begin your journey with Animus? Follow these steps to get started:
+
+### 1. Core Installation
+**Start with the installer.** Get the foundational Animus framework up and running by following the installation guide in our [main repository](https://github.com/animus-uno/animus).
+
+### 2. Advanced Functionality
+**Adding advanced functionality to your installation?** Install the **SMCP** (Sanctum Model Context Protocol) to enable your agents to use advanced tools and integrations. Learn more at the [SMCP repository](https://github.com/animus-uno/smcp).
+
+### 3. Voice Integration
+**Experimenting with voice for the first time?** Start with the **Cochlea** repository for audio processing and voice interaction capabilities. Explore voice features at the [Cochlea repository](https://github.com/animus-uno/cochlea).
+
+### 4. Advanced Sensory Input
+**Doing advanced sensory input?** Experiment with the **Thalamus** repository for sophisticated sensory processing, routing, and context management. Dive into sensory systems at the [Thalamus repository](https://github.com/animus-uno/thalamus).
+
+---
+
+*Each component builds upon the others, creating a comprehensive ecosystem for building conscious AI entities.*
+
 ## 🏗️ Framework Architecture
 
 ### Letta Kernel
