@@ -183,30 +183,25 @@ Animus uses a bootstrap installer for easy setup. The installer automates the in
 
 After installation, you can access:
 - **Letta Web Interface**: `https://your-domain.com`
-- **Letta Admin**: `https://your-domain.com/admin`
-- **TUI Interface**: Terminal-based user interface (web interface was deprecated)
+- **Letta Admin**: `https://app.letta.com/`
+- **TUI Interface**: Terminal-based user interface ([animus-chat](https://github.com/AnimusUNO/animus-chat))
 
-### Quick Example (Minimal Agent Instantiation)
-```typescript
-import { AnimusAgent } from '@animus/core';
+### Quick Start Workflow
 
-// Instantiate an Animus agent with persistent, multi-layered memory
-env.OPENAI__API__KEY = 'your__api__key_here';
+1. **Create an agent using the ADE:**
+   - Access the Letta Web Interface at `https://your-domain.com`
+   - Use the Agent Development Environment to create and configure your first agent
+   - Set up the agent's personality, memory, and capabilities
 
-const agent = new AnimusAgent({
-  id: 'athena',
-  persona: 'Wise, persistent, and neuro-inspired',
-  memory: {
-    type: 'layered',
-    storage: 'sqlite',
-    path: './agent-memory.db',
-  },
-});
+2. **Access your agent:**
+   - **Web Interface**: Continue using the ADE at `https://your-domain.com`
+   - **CLI/TUI**: Use the [animus-chat](https://github.com/AnimusUNO/animus-chat) interface for terminal-based interaction
+   - **API**: Access programmatically via the Letta API endpoints
 
-// Converse and persist identity across sessions
-await agent.say('Hello, world.'); // => "Greetings, human. I never forget."
-// (Agent memory and personality survive restarts, new platforms, etc.)
-```
+3. **Agent Management:**
+   - Configure agent settings through the ADE
+   - Monitor agent performance and memory usage
+   - Scale and deploy multiple agents as needed
 
 ### Troubleshooting
 
@@ -241,43 +236,28 @@ await agent.say('Hello, world.'); // => "Greetings, human. I never forget."
 
 For more detailed troubleshooting, see the [installer documentation](https://github.com/AnimusUNO/installer).
 
-## 🔧 Running Animus Core Standalone
-
-Use Animus agents directly in your applications without the CLI or web interface.
-
-```bash
-git clone https://github.com/AnimusUNO/animus.git
-cd animus/examples
-
-# Interactive chat
-OPENAI__API__KEY=your__key bun run standalone-cli-chat.ts
-
-# Basic message processing
-OPENAI__API__KEY=your__key bun run standalone.ts
-```
-
 ## 🏛️ Architecture Overview
 
-Animus is a monorepo containing all packages needed to run the platform.
+Animus is built as a modular ecosystem of specialized repositories, each handling specific cognitive functions:
 
-```
-/
-├── packages/
-│   ├── server/         # Core backend server (Express.js)
-│   ├── client/         # Frontend web interface (React)
-│   ├── cli/            # Command-line tool for managing projects
-│   ├── core/           # Shared utilities and functions
-│   ├── app/            # Cross-platform desktop app (Tauri)
-│   ├── plugin-bootstrap/ # Core communication/event handling plugin
-│   ├── plugin-sql/     # Database integration (Postgres, PGLite)
-│   └── ...             # Other plugins and project starters
-└── ...
-```
+### Core System Components
 
-- **@animus/server**: Express.js backend running agents and exposing the API
-- **@animus/client**: React-based web UI for managing/interacting with agents
-- **@animus/cli**: Central tool for scaffolding, running, and managing projects
-- **@animus/plugin-bootstrap**: Mandatory core plugin for message processing and agent actions
+- **[installer](https://github.com/AnimusUNO/installer)** - Bootstrap installation and system setup
+- **[smcp](https://github.com/AnimusUNO/smcp)** - Sanctum Model Context Protocol server for advanced agent tools
+- **[thalamus](https://github.com/AnimusUNO/thalamus)** - Sensory routing and filtering system
+- **[cochlea](https://github.com/AnimusUNO/cochlea)** - Audio processing and voice interaction
+- **[animus-chat](https://github.com/AnimusUNO/animus-chat)** - Terminal user interface for agent interaction
+
+### Integration Components
+
+- **[animus-discord](https://github.com/AnimusUNO/animus-discord)** - Discord integration and webhook processing
+- **[animus-web-chat](https://github.com/AnimusUNO/animus-web-chat)** - Flask-based web client for Animus
+
+### System Architecture
+
+The Animus ecosystem follows a brain-inspired modular design where each repository represents a specific cognitive function, working together through the Letta kernel to create a complete multi-agent system.
+
+
 
 ## 🔬 Research Areas
 
