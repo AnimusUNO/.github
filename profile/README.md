@@ -1,7 +1,5 @@
-# Animus Framework
-
 <div align="center">
-  <h1>Animus</h1>
+  <h1>Animus Framework</h1>
   <p><strong>The Open-Source Framework for Physical AI Agents</strong></p>
   <p>Build, deploy, and manage autonomous AI agents with real memory, persistent identity, and modular, neuro-inspired architecture—for robotics, embodied systems, and the entire physical world.</p>
 </div>
