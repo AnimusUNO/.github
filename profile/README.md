@@ -10,6 +10,20 @@
   <a href="https://discord.gg/animusuno"><img src="https://img.shields.io/badge/Discord-Chat-blue?style=for-the-badge&logo=discord" alt="Discord"></a>
 </div>
 
+## 📌 Core Repositories
+
+<div align="center">
+
+| | Repository | Description | Language | Stars |
+|:---:|:---|:---|:---|:---:|
+| 🔧 | [**installer**](https://github.com/AnimusUNO/installer) | Install the Animus framework | Shell | ![GitHub stars](https://img.shields.io/github/stars/AnimusUNO/installer?style=flat-square) |
+| 🦋 | [**smcp**](https://github.com/AnimusUNO/smcp) | Internal MCP server for Animus | Python | ![GitHub stars](https://img.shields.io/github/stars/AnimusUNO/smcp?style=flat-square) |
+| 🧠 | [**thalamus**](https://github.com/AnimusUNO/thalamus) | Sensory routing and filtering system for Animus | Python | ![GitHub stars](https://img.shields.io/github/stars/AnimusUNO/thalamus?style=flat-square) |
+| 🔊 | [**cochlea**](https://github.com/AnimusUNO/cochlea) | Audio Ingest System for Animus | Python | ![GitHub stars](https://img.shields.io/github/stars/AnimusUNO/cochlea?style=flat-square) |
+| 💬 | [**animus-chat**](https://github.com/AnimusUNO/animus-chat) | A simple TUI chat for interfacing with Animus agents | Python | ![GitHub stars](https://img.shields.io/github/stars/AnimusUNO/animus-chat?style=flat-square) |
+
+</div>
+
 ## 🌟 What is Animus?
 
 Animus is an open, extensible framework for designing and deploying LLM-driven physical agents with layered memory, persistent personality, and brain-inspired modularity. Whether you're building interactive robots, autonomous digital companions, or adaptive agents for smart devices, Animus provides the foundation for systems that feel genuinely alive.
