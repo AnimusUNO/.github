@@ -336,6 +336,10 @@ For specific licensing terms and conditions, please refer to the individual lice
 
 If you use Animus in your research, please cite our website: [Animus.uno](https://animus.uno)
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=animusuno/smcp,animusuno/installer,animusuno/cochlea,animusuno/thalamus,animusuno/animus-discord,animusuno/animus-chat,animusuno/animus-web-chat&type=date&logscale&legend=top-left)](https://www.star-history.com/#animusuno/smcp&animusuno/installer&animusuno/cochlea&animusuno/thalamus&animusuno/animus-discord&animusuno/animus-chat&animusuno/animus-web-chat&type=date&logscale&legend=top-left)
+
 ---
 
 *Animus: Where machines become more than tools—they become companions through brain-inspired consciousness.*
