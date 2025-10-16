@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-  <a href="https://github.com/AnimusUNO/installer/blob/main/LICENSE"><img src="https://img.shields.io/github/license/AnimusUNO/installer?style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/AnimusUNO/installer/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-AGPLv3-blue?style=for-the-badge" alt="License"></a>
   <a href="https://animus.uno/"><img src="https://img.shields.io/badge/Documentation-Read%20Docs-blue?style=for-the-badge" alt="Documentation"></a>
   <a href="https://discord.gg/animusuno"><img src="https://img.shields.io/badge/Discord-Chat-blue?style=for-the-badge&logo=discord" alt="Discord"></a>
 </div>
