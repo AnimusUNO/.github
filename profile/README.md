@@ -41,7 +41,7 @@ This disciplined naming approach ensures that the architecture remains legible a
 Ready to begin your journey with Animus? Follow these steps to get started:
 
 ### 1. Core Installation
-**Start with the installer.** Get the foundational Animus framework up and running by following the installation guide in our [main repository](https://github.com/AnimusUNO/animus).
+**Start with the installer.** Get the foundational Animus framework up and running by following the installation guide in our [installer repository](https://github.com/AnimusUNO/installer).
 
 ### 2. Advanced Functionality
 **Adding advanced functionality to your installation?** Install the **SMCP** (Sanctum Model Context Protocol) to enable your agents to use advanced tools and integrations. Learn more at the [SMCP repository](https://github.com/AnimusUNO/smcp).
@@ -130,55 +130,61 @@ Animus is compatible with a wide range of LLMs:
 | Codestral | Mistral AI | ✅ Supported |
 | O1-Preview | OpenAI | ✅ Supported |
 
-## 🏁 Getting Started (5-Minute Quick Start)
+## 🏁 Getting Started (Quick Installation)
 
-Animus supports two main paths:
-- **For Creators & Standalone Projects (CLI)**: Quick setup for running agents out of the box—no need to touch core code. Perfect for first-timers or minimalists.
-- **For Power Users & Contributors (Monorepo)**: Clone the full repo for advanced customization, new module development, or multi-agent orchestration.
+Animus uses a bootstrap installer for easy setup. The installer automates the installation and configuration of the complete Animus multi-agent system.
 
 ### Prerequisites
-- Node.js (v23+)
-- bun
+- **Operating System**: Ubuntu, WSL, or Raspbian
+- **Root Access**: sudo privileges required
+- **Internet Connection**: Required for package installation and Docker pulls
+- **Domain**: A domain name pointing to your server (for SSL certificates)
 
-> **Note for Windows Users**: WSL 2 is required.
+### Installation Steps
 
-### 1. Install the CLI
-```bash
-bun install -g @animus/cli
-# Verify installation
-animus --version
-```
+1. **Clone the installer repository:**
+   ```bash
+   git clone https://github.com/AnimusUNO/installer.git
+   cd installer
+   ```
 
-### 2. Create Your Project
-```bash
-# Create a new project with an interactive setup
-animus create my-first-agent
-# Follow the prompts. For beginners, we recommend:
-# - Database: pglite (no setup required)
-# - Model Provider: openai
-# - Project Type: project
-```
+2. **Customize the bootstrap script:**
+   ```bash
+   nano kernel-installer/animus_bootstrap.sh
+   ```
+   
+   **Required Customizations:**
+   ```bash
+   DOMAIN="your-domain.com"                    # Your actual domain
+   EMAIL="your-email@domain.com"               # Your email for SSL
+   LETTAPASS="your-secure-password"            # Secure password for Letta
+   OPENAI_API_KEY="your-openai-key"            # Your OpenAI API key
+   ANTHROPIC_API_KEY="your-anthropic-key"      # Your Anthropic API key
+   ```
 
-### 3. Configure Your API Key
-```bash
-cd my-first-agent
-# Open the local environment file
-animus env edit-local
-```
-Add your model provider's API key (e.g., for OpenAI):
-```
-OPENAI__API__KEY=your__api__key_here
-```
+3. **Run the installation:**
+   ```bash
+   sudo bash kernel-installer/animus_bootstrap.sh
+   ```
 
-### 4. Start Your Agent
-```bash
-# Build and start the agent server
-animus start
-```
+4. **Verify installation:**
+   ```bash
+   # Check if Letta container is running
+   docker ps | grep letta
+   
+   # Check Nginx status
+   sudo systemctl status nginx
+   
+   # Check SSL certificate
+   sudo certbot certificates
+   ```
 
-Your agent is now running!
-- **Web Interface**: http://localhost:3000
-- **API Endpoint**: http://localhost:3000/api
+### Post-Installation Access
+
+After installation, you can access:
+- **Letta Web Interface**: `https://your-domain.com`
+- **Letta Admin**: `https://your-domain.com/admin`
+- **TUI Interface**: Terminal-based user interface (web interface was deprecated)
 
 ### Quick Example (Minimal Agent Instantiation)
 ```typescript
@@ -202,44 +208,38 @@ await agent.say('Hello, world.'); // => "Greetings, human. I never forget."
 // (Agent memory and personality survive restarts, new platforms, etc.)
 ```
 
-<details>
-<summary>📚 Advanced CLI Commands & Usage</summary>
+### Troubleshooting
 
-Animus CLI isn't just for beginners. Here's a taste of advanced commands for development and management.
+**Common Issues:**
 
-#### Development Workflow
-```bash
-# Make changes to your agent code, then rebuild and restart
-bun run build
-animus start
+1. **SSL Certificate Issues**
+   ```bash
+   # Check certificate status
+   sudo certbot certificates
+   
+   # Renew certificates manually
+   sudo certbot renew --dry-run
+   ```
 
-# Or, start in development mode with auto-rebuild
-animus dev
+2. **Docker Container Not Starting**
+   ```bash
+   # Check container logs
+   docker logs letta-container
+   
+   # Restart container
+   docker restart letta-container
+   ```
 
-# Run tests to verify your changes
-animus test
-```
+3. **Nginx Configuration Issues**
+   ```bash
+   # Test configuration
+   sudo nginx -t
+   
+   # Reload configuration
+   sudo systemctl reload nginx
+   ```
 
-#### Agent & Environment Management
-```bash
-# List all available agents
-animus agent list
-
-# Start a specific agent by name
-animus agent start --name "MyAgent"
-
-# Show all environment variables
-animus env list
-```
-
-#### Debugging
-```bash
-# Start with detailed debug logging
-LOG_LEVEL=debug animus start
-```
-
-For a full command reference, run `animus --help` or `animus <command> --help`.
-</details>
+For more detailed troubleshooting, see the [installer documentation](https://github.com/AnimusUNO/installer).
 
 ## 🔧 Running Animus Core Standalone
 
