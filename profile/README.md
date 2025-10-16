@@ -338,7 +338,7 @@ If you use Animus in your research, please cite our website: [Animus.uno](https:
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=animusuno/smcp,animusuno/installer,animusuno/cochlea,animusuno/thalamus,animusuno/animus-discord,animusuno/animus-chat,animusuno/animus-web-chat&type=date&logscale&legend=top-left)](https://www.star-history.com/#animusuno/smcp&animusuno/installer&animusuno/cochlea&animusuno/thalamus&animusuno/animus-discord&animusuno/animus-chat&animusuno/animus-web-chat&type=date&logscale&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=AnimusUNO/smcp,AnimusUNO/installer,AnimusUNO/cochlea,AnimusUNO/thalamus,AnimusUNO/animus-discord,AnimusUNO/animus-chat,AnimusUNO/animus-web-chat&type=date&logscale&legend=top-left)](https://www.star-history.com/#AnimusUNO/smcp&AnimusUNO/installer&AnimusUNO/cochlea&AnimusUNO/thalamus&AnimusUNO/animus-discord&AnimusUNO/animus-chat&AnimusUNO/animus-web-chat&type=date&logscale&legend=top-left)
 
 ---
 
