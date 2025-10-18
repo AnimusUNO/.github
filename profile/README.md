@@ -20,7 +20,7 @@
 | 🦋 | [**smcp**](https://github.com/AnimusUNO/smcp) | Internal MCP server for Animus | Python | ![GitHub stars](https://img.shields.io/github/stars/AnimusUNO/smcp?style=flat-square) |
 | 🧠 | [**thalamus**](https://github.com/AnimusUNO/thalamus) | Sensory routing and filtering system for Animus | Python | ![GitHub stars](https://img.shields.io/github/stars/AnimusUNO/thalamus?style=flat-square) |
 | 🔊 | [**cochlea**](https://github.com/AnimusUNO/cochlea) | Audio Ingest System for Animus | Python | ![GitHub stars](https://img.shields.io/github/stars/AnimusUNO/cochlea?style=flat-square) |
-| 💬 | [**animus-chat**](https://github.com/AnimusUNO/animus-chat) | A simple TUI chat for interfacing with Animus agents | Python | ![GitHub stars](https://img.shields.io/github/stars/AnimusUNO/animus-chat?style=flat-square) |
+| 💬 | [**animus-tui**](https://github.com/AnimusUNO/animus-tui) | A simple TUI chat for interfacing with Animus agents | Python | ![GitHub stars](https://img.shields.io/github/stars/AnimusUNO/animus-chat?style=flat-square) |
 
 </div>
 
